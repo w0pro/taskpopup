@@ -1,13 +1,32 @@
 <?php
 add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 function theme_name_scripts() {
-    wp_enqueue_script( 'jquery');
 
+    wp_enqueue_script( 'jquery');
     wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/style.css' );
     wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js');
+
+    wp_localize_script(
+        'script',
+        'feedback_object',
+        array(
+            'url'   => admin_url( 'admin-ajax.php' ),
+            'nonce' => wp_create_nonce( 'feedback-nonce' ),
+        )
+    );
+
 }
 
 get_template_part( 'templates/shortcodes/shortcodes');
+get_template_part( 'templates/Classes/Mail');
+
+
+add_action( 'wp_ajax_mail', 'send_mail' );
+add_action( 'wp_ajax_nopriv_mail', 'send_mail' );
+
+function send_mail () {
+    Mail::check_form_fields($_POST);
+}
 
 
 

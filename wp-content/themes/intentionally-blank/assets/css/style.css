@@ -39,6 +39,68 @@ body {
     border-radius: 4px;
 }
 
+.pop-up {
+    display: none;
+    background-color: white;
+    border-radius: 8px;
+    padding: 54px 54px 0 30px;
+}
+
+.pop-up__title {
+    font-size: 35px;
+    line-height: 120%;
+    margin: 0 auto 52px 24px;
+}
+
+.pop-up__body {
+    display: flex;
+    column-gap: 54px;
+}
+
+.pop-up__body__img {
+    display: flex;
+    flex-direction: column;
+}
+
+.pop-up__img__icons {
+    display: flex;
+    column-gap: 10px;
+    margin: 0 auto 20px 24px;
+}
+
+#form__feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__content:first-child{
+    margin-bottom: 30px;
+}
+
+.input__content:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.input__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.input__content label {
+    font-size: 15px;
+}
+
+.input__content input {
+    border-radius: 4px;
+    padding: 15px 18px;
+    border: 1px solid grey;
+}
+
+.input__content input.error {
+    border: 1px solid red;
+}
+
 
 
 
@@ -49,7 +111,6 @@ body {
 
 body.custom__pop{
     overflow: hidden!important;
-    position: relative!important;
 }
 
 .pop-up__overlay {
@@ -64,4 +125,68 @@ body.custom__pop{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pop-up_wrapper {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    top: 21px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.close-btn span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+}
+
+.close__button_wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.close-btn span:first-child {
+    transform: rotate(45deg);
+}
+.close-btn span:last-child {
+    transform: rotate(315deg);
+}
+
+.form__submit_button {
+    color: white;
+    display: flex;
+    column-gap: 22px;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    width: 100%;
+    background-color: #6bce7a;
+    border-radius: 4px;
+    box-shadow: #5aa767 0 4px 0;
+    cursor: pointer;
+}
+
+.form__submit_button:active {
+    box-shadow: none;
+}
+
+.form__desc {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    font-size: 12px;
+    color: #808080;
 }
