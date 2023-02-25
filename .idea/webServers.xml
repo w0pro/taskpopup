@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d8884606-8eb8-4dd9-9652-3a26b4bb1a52" name="popup">
+        <fileTransfer rootFolder="/home/y/yasapr3b/task/public_html" accessType="SFTP" host="yasapr3b.beget.tech" port="22" sshConfigId="095963b5-7f27-4acd-b01f-06519674a907" sshConfig="yasapr3b_popup@yasapr3b.beget.tech:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

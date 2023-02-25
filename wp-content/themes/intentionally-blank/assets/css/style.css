@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
+.pop-up__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    height: 70px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.pop-up__button:active {
+    box-shadow: none;
+}
+
+.button_red {
+    background-color: #ff0000;
+    color: white;
+    box-shadow: 0 5px 5px 0 black;
+    border-radius: 4px;
+}
