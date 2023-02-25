@@ -5,7 +5,7 @@ function popup_short()
 
     ob_start();
     ?>
-    <div class="form-pop" id="form-content" style="display: none; max-width: 500px">
+    <div class="form-pop" id="pop_up_content" style="display: none; max-width: 500px">
         <form id="add_feedback">
             <input type="text" name="art_name" id="art_name" class="required art_name" placeholder="Имя" value=""/>
 
@@ -22,7 +22,7 @@ function popup_short()
             <input  type="submit" id="submit-feedback" class="input-btn" value="Отправить"/>
         </form>
     </div>
-    <div data-src="#form-content" class="btn-form">
+    <div data-src="#pop_up_content" id="pop_up_btn" class="btn-form">
         <button class="pop-up__button button_red">
             Кликни
         </button>

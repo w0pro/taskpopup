@@ -38,3 +38,30 @@ body {
     box-shadow: 0 5px 5px 0 black;
     border-radius: 4px;
 }
+
+
+
+
+
+.active-active {
+    display: block!important;
+}
+
+body.custom__pop{
+    overflow: hidden!important;
+    position: relative!important;
+}
+
+.pop-up__overlay {
+    position: absolute;
+    z-index: 99999999;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
